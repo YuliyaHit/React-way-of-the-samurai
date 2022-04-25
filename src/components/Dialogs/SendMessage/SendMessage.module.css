@@ -1,0 +1,23 @@
+.sendMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sendMessage__field {
+    width: 250px;
+    min-height: 50px;
+    border-radius: 5px;
+    border: 1px solid lawngreen;
+    margin-right: 10px;
+}
+
+.sendMessage__btn {
+    width: 50px;
+    height: 30px;
+    background: lawngreen;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    text-shadow: 1px 1px 1px grey;
+}

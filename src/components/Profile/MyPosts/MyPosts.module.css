@@ -1,0 +1,27 @@
+.posts__block {
+    padding: 10px;
+}
+
+.posts {
+    margin-top: 10px;
+}
+
+.posts__field {
+    width: 300px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid lawngreen;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.posts__btn {
+    width: 80px;
+    height: 40px;
+    background: lawngreen;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    text-shadow: 1px 1px 1px grey;
+}
