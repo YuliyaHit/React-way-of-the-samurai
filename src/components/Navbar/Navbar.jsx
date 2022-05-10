@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './Navbar.module.css';
 import {NavLink} from "react-router-dom";
 import Friends from "./Friends/Friends";
+import StoreContext from "../../storeContext";
 
 
 const activeLink = ({ isActive }) => isActive ? `${classes.activeLink}` : `${classes.item}`;
@@ -24,7 +25,13 @@ const Navbar  = (props) => {
 		<div className = {classes.item}>
 			<a >Settings</a>
 		</div>
-		<Friends state={props.state.friends}/>
+		<StoreContext.Consumer>
+			{(store) => {
+				let state = store.getState().friends;
+				<Friends state={state}/>
+			}}
+		</StoreContext.Consumer>
+
 
 	</nav>
 };
